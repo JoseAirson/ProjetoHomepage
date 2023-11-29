@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+    --cor-principal: black;
+    --cor-secundaria: white;
+    --cor-terciara: #0084E8;
+    --cor-botoes: #01339B;
+
+    --fonte-principal-titulo: 'Krona One', sans-serif;
+    --fonte-secundaria-texto: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* height: 100vh; */
+    box-sizing: border-box;
+    background-color: var( --cor-principal);
+    color: var(--cor-secundaria);
+}
+
+.menu{
+    padding: 2% 10% 0% 10%; /*cima direita baixo esquerda*/
+}
+
+.menu__links{
+    display: flex;
+    gap: 10%;
+    
+   
+    
+}
+
+.menu__links__link{
+    text-decoration: none;
+    font-family: var(--fonte-secundaria-texto);
+    font-size: 2rem;
+    font-weight: bolder;
+    color: var(--cor-terciara);
+}
+
+.menu__menu__links__arealogin{
+    padding: 0% 0% 0% 60%;
+}
+
+.menu__menu__links__arealogin__botao{
+    text-decoration: none;
+    font-family: var(--fonte-secundaria-texto);
+    font-size: 2rem;
+    font-weight: bolder;
+    color: var(--cor-terciara); 
+}
+
+.conteudo {
+    padding: 10% 10%;
+    /*
+    margin-bottom: 10%;
+    margin-top: 8%;
+    margin-left: 8%;
+    margin-right: 8%;*/
+    gap: 82px;
+    display: flex;
+    align-items: center;
+    
+    justify-content: space-between;
+}
+
+.conteudo__texto{
+    
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    padding: 0% 0% 9% 0%;
+}
+
+.conteudo__texto__titulo{
+    font-size: 2.25rem;
+    font-family: var(--fonte-principal-titulo);
+    font-weight: bold;
+}
+
+.conteudo__texto__subtitulo {
+    font-size: 1.25rem;
+    font-family: var(--fonte-secundaria-texto);
+    font-weight: normal;
+    text-align: justify;
+}
+
+.titulo1 {
+    color: var(--cor-secundaria);
+    text-align: justify;
+
+}
+
+.paragrafo1{
+    color: var(--cor-terciara);
+    text-align: justify;
+
+}
+
+.conteudo__texto__botoes__insta__wpp{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+    gap: 30px;
+    
+}
+
+.conteudo__texto__botoes__insta__wpp__faleconosco{
+    font-family: var(--fonte-secundaria-texto);
+    font-size: 1.25rem;
+}
+
+.conteudo__texto__botoes__insta__wpp__div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+
+.conteudo__texto__botoes__insta__wpp__div__link{
+    background-color: var(--cor-botoes);
+    border-radius: 1rem;
+    padding: 1.34rem 0rem;
+    text-align: center;
+    font-family: var(--fonte-secundaria-texto);
+    width: 40%;
+    /*height: 1rem;*/
+    text-decoration: none;
+    color: var(--cor-secundaria);
+}
+
+.imagem_cotafarma{
+    /*display: flex;
+    align-items: center;
+    flex-direction: column; */
+    width: 50%; 
+}
+
+.rodape{
+    color: var(--cor-principal);
+    background-color:var(--cor-terciara);
+    padding: 1.5rem;
+    text-align: center;
+    font-family: var(--fonte-secundaria-texto);
+}
+
+@media (max-width: 1100px){
+    .conteudo{
+        flex-direction: column-reverse;
+        padding: 5% 5%;
+    }
+
+    .conteudo__texto{
+        width: auto;
+    }
+
+    .menu{
+        padding: 10% 10% 0% 10%; /*cima direita baixo esquerda*/
+
+    }
+
+    .menu__links{
+        justify-content: center;
+    }
+}
